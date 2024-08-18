@@ -16,6 +16,7 @@ function btnEncriptar() {
     textArea.value = "";
     presente.style.display = "none"
     oculto.style.display = "flex"
+    alert("Debes ingresar algun texto");
 }
 
 function encriptar(stringEncriptada) {
@@ -49,6 +50,7 @@ function btnDesencriptar() {
     textArea.value = "";
     presente.style.display = "none"
     oculto.style.display = "flex"
+    alert("Debes ingresar algun texto");
 }
 
 function desencriptar(stringDesencriptada) {
