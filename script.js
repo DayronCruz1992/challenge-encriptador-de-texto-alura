@@ -11,12 +11,17 @@ const oculto = document.querySelector(".oculto")
 //La letra "u" es convertida para "ufat"
 
 function btnEncriptar() {
+    if(regexp.test(textArea.value)){
     const textoEncriptado = encriptar(textArea.value)
     mensaje.value = textoEncriptado
     textArea.value = "";
     presente.style.display = "none"
     oculto.style.display = "flex"
-    alert("Debes ingresar algun texto");
+    } else {
+
+    alert("Texto no valido")
+    
+    }
 }
 
 function encriptar(stringEncriptada) {
@@ -45,13 +50,19 @@ function copiar() {
 
 
 function btnDesencriptar() {
+    if(regexp.test(textArea.value)){
     const textoEncriptado = desencriptar(textArea.value)
     mensaje.value = textoEncriptado
     textArea.value = "";
     presente.style.display = "none"
     oculto.style.display = "flex"
-    alert("Debes ingresar algun texto");
+} else {
+    alert("Texto no valido")
+    }
+
 }
+
+const regexp = /^[a-z\s]+$/;
 
 function desencriptar(stringDesencriptada) {
     let matrizCodigo = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]];
@@ -66,4 +77,3 @@ function desencriptar(stringDesencriptada) {
         }
         return stringDesencriptada
     }
-    
