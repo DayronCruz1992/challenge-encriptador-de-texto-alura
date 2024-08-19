@@ -19,7 +19,7 @@ function btnEncriptar() {
     oculto.style.display = "flex"
     } else {
 
-    alert("Texto no valido")
+    alert("Solo letras minúsculas y sin acentos")
     
     }
 }
@@ -57,7 +57,7 @@ function btnDesencriptar() {
     presente.style.display = "none"
     oculto.style.display = "flex"
 } else {
-    alert("Texto no valido")
+    alert("Solo letras minúsculas y sin acentos")
     }
 
 }
@@ -75,5 +75,4 @@ function desencriptar(stringDesencriptada) {
             }
     
         }
-        return stringDesencriptada
-    }
+    
