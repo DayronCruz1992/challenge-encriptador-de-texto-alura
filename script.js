@@ -19,7 +19,7 @@ function btnEncriptar() {
     oculto.style.display = "flex"
     } else {
 
-    alert("Solo letras minúsculas y sin acentos")
+    alert("Ingrese un texto sin acentos o mayusculas")
     
     }
 }
@@ -57,7 +57,7 @@ function btnDesencriptar() {
     presente.style.display = "none"
     oculto.style.display = "flex"
 } else {
-    alert("Solo letras minúsculas y sin acentos")
+    alert("Ingrese un texto sin acentos o mayusculas")
     }
 
 }
